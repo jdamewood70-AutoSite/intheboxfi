@@ -1,16 +1,15 @@
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-      observer.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.12 });
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>In The Box — Performance Is Engineered</title><meta name="description" content="In The Box engineers consistent, measurable F&I performance for RV dealerships."><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css"></head>
+<body><canvas id="field"></canvas><div class="grain"></div><header><a class="logo" href="#opening"><span><i></i><i></i><i></i></span>in the box</a><div class="status"><i></i> SYSTEM ONLINE</div><a href="#diagnostic">SCAN YOUR DEALERSHIP ↗</a></header>
+<main>
+  <section id="opening" class="scene opening"><div class="chapter">F&amp;I PERFORMANCE ENGINEERING / 001</div><div class="opening-copy"><p>EVERY DEALERSHIP HAS A PROCESS.</p><h1><span>IS YOURS</span><b data-split>ENGINEERED?</b></h1></div><div class="cut"><i></i><b></b><i></i></div><div class="opening-after"><p>Talent is unpredictable.<br>Systems create consistency.</p><strong>CONSISTENCY<br>CREATES PROFIT.</strong></div><div class="scroll">SCROLL TO STRESS TEST <i></i></div></section>
 
-document.querySelectorAll('.reveal').forEach((item) => observer.observe(item));
+  <section id="chaos" class="scene chaos"><div class="chapter">PROCESS STRESS TEST / 002</div><div class="chaos-head"><p>Everybody has a system.</p><h2>That's the<br><em>problem.</em></h2></div><div class="flow" id="flow"><svg aria-hidden="true" viewBox="0 0 1200 520" preserveAspectRatio="none"><path d="M70 260 C180 30 280 490 420 150 S680 430 820 120 S1010 500 1140 250"/><path d="M60 100 C210 450 300 20 470 380 S760 20 920 390 S1080 90 1160 180"/><path d="M50 410 C250 180 330 470 530 90 S820 450 1160 340"/></svg><div class="node n1">SALES</div><div class="node n2">DESK</div><div class="node n3">F&amp;I</div><div class="node n4">DELIVERY</div><div class="papers"><i></i><i></i><i></i><i></i><i></i><i></i></div><button id="engineer">ENGINEER THE PROCESS <span>→</span></button></div><img class="clay-cameo" src="assets/chaos-crew.png" alt="Clay dealership employees wrestling with process chaos"><div class="chaos-caption">HOVER THE SYSTEM. THEN FIX IT.</div></section>
 
-const menu = document.querySelector('.menu-toggle');
-menu?.addEventListener('click', () => {
-  const open = menu.getAttribute('aria-expanded') === 'true';
-  menu.setAttribute('aria-expanded', String(!open));
-});
+  <section id="order" class="scene order"><div class="blade"><i></i><b></b><i></i></div><div class="chapter">PROCESS ARCHITECTURE / 003</div><h2>CHAOS ISN'T<br><span>COMPLICATED.</span></h2><div class="telemetry"><article><small>PROCESS VARIANCE</small><strong data-count="0">14.2</strong><i>%</i><p>Every inconsistent handoff creates friction. Friction consumes margin.</p></article><article><small>HERO DEPENDENCY</small><strong data-count="0">01</strong><i>PERSON</i><p>If the business needs one person to rescue it, the system is already broken.</p></article><article><small>OPERATING STANDARD</small><strong data-count="0">ONE</strong><i>WAY</i><p>Document it. Align it. Measure it. Reinforce it.</p></article></div><div class="order-line"><i></i><span>SALES</span><i></i><span>DESK</span><i></i><span>F&amp;I</span><i></i><span>DELIVERY</span><i></i></div></section>
+
+  <section id="proof" class="scene proof"><div class="chapter">THE PRINCIPLE / 004</div><div class="kinetic"><span>PERFORMANCE</span><small>IS</small><b>ENGINEERED.</b></div><p>Not hoped for. Not dependent on a hero. Not left to chance.</p><div class="machine"><div class="ring r1"></div><div class="ring r2"></div><div class="ring r3"></div><div class="core">ITB<i>CALIBRATED</i></div></div></section>
+
+  <section id="diagnostic" class="scene diagnostic"><div class="blade"><i></i><b></b><i></i></div><div class="chapter">PROCESS HEALTH ANALYSIS / 005</div><div class="diag-copy"><p>DON'T TAKE A SURVEY.</p><h2>SCAN YOUR<br>DEALERSHIP.</h2><span>Three minutes. Immediate insight. No sales pitch disguised as a quiz.</span></div><div class="scanner"><div class="scan-top"><span>IN THE BOX / DIAGNOSTIC ENGINE</span><i>READY</i></div><div class="scan-screen"><div class="grid"></div><div class="scan-beam"></div><div class="scan-target"><b>?</b><span>PROCESS<br>INTEGRITY</span></div></div><div class="scan-readouts"><span>DOCUMENTATION <b>—</b></span><span>ALIGNMENT <b>—</b></span><span>DEPENDENCY <b>—</b></span></div><a href="mailto:diagnostics@intheboxrv.com?subject=Begin%20My%20Process%20Health%20Analysis">INITIATE SCAN <b>↗</b></a></div></section>
+
+  <section class="scene ending"><div class="end-laser"></div><p>THE PROCESS IS THE PRODUCT.</p><h2>PERFORMANCE<br><span>IS ENGINEERED.</span></h2><a href="#diagnostic">GET IN THE BOX ↗</a><footer><span>© 2026 IN THE BOX RV</span><span>INTHEBOXRV.COM</span></footer></section>
+</main><script src="script.js"></script></body></html>
